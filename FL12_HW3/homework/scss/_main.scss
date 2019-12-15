@@ -1,17 +1,26 @@
-@mixin secondttitle {
-    font-family: $secondFont;
-}
-@mixin secondary_title{
-	font-family: $mainFont;
-}
-@mixin secondary_title{
-	font-family: $thirdFont;
-}
+@mixin landingLogo {
+    img {
+        width: 36px;
+        height: 36px;
+        margin-right: 10px;
+    }
 
+    p {
+        font-family: map-get($fontFamily, 'mainFont'), sans-serif;
+        font-size: $landingFontSize + 7px;
+        font-weight: map-get($fontWeight, 'semibold');
+
+        span {
+            text-align: center;
+            display: block;
+            font-size: $landingFontSize - 5px;
+        }
+    }
+}
 
 header {
-    font-family: $mainFont;
-	
+    font-family: map-get($fontFamily, 'firstFont'), sans-serif;
+
     .header-wrap {
 
         p::selection {
@@ -33,7 +42,6 @@ header {
         .header_heading {
             width: 500px;
             height: 110px;
-            font-family: $mainFont;
             font-weight: bold;
             color: $colorcontent;
             font-size: $FontSize + 43px;
@@ -49,7 +57,7 @@ header {
             width: 140px;
             height: 50px;
             margin: 0;
-            @include secondary_title;
+
 
             img {
                 width: 36px;
@@ -63,7 +71,7 @@ header {
                 padding: 0;
                 margin: 0;
                 font-weight: bold;
-                @include secondary_title;
+
 
 
                 span {
@@ -91,7 +99,6 @@ header {
             line-height: 20px;
             width: 550px;
             margin-bottom: 45px;
-            @include secondary_title;
         }
 
         .header_button {
@@ -120,12 +127,12 @@ header {
 
 body {
     background: $contentBackground;
+    font-family: map-get($fontFamily, 'firstFont'), sans-serif;
 
     .section_text {
         color: $colorcontent;
         text-align: center;
         font-size: $FontSize + 15;
-        font-family: $mainFont;
         font-weight: 600;
 
         .section_card_wrap {
@@ -145,112 +152,111 @@ main {
     max-width: 100%;
     width: 60%;
 
-    .section_card_wrap {
-        text-align: center;
-        padding: 0;
+    .section_text {
+        font-family: map-get($fontFamily, 'firstFont'), sans-serif;
 
-
-        .section_card {
-            margin: 20px;
-            width: 100%;
-            height: 270px;
+        .section_card_wrap {
             text-align: center;
-            background: $sectionBgr;
-            border-radius: 5px;
-            font-family: $firstFont;
-            color: $TextColorcard;
-			@include secondary_title;
-
-            .section_card_right_container {
-                padding: 0;
-                margin: 5px 50px 5px 400px;
-                padding-top: 30px;
-
-                .section_card_heading {
-                    color: $logincolor;
-                    font-weight: bold;
-                    font-size: $FontSize + 5px;
-                    padding-bottom: 20px;
-                    padding: 0;
-                    @include secondary_title;
-                }
-
-                a {
-                    color: $logincolor;
-                    font-size: $FontSize;
-                }
-
-                .section_card_text {
-                    margin: 45px 0 14px 0;
-                    width: 400px;
-                    font-size: $FontSize + 1px;
-                    padding: 0;
-                    text-align: justify;
-                }
-            }
-
-            .section_card_img {
-                float: left;
-                padding: 15px;
-                width: 320px;
-                height: 240px;
-            }
-
+            padding: 0;
         }
     }
 
-    .section_banner {
-        position: absolute;
-        top: 1620px;
-        z-index: 2;
-        width: 62%;
-        background: $Gradientbanner;
+    .section_card {
+        margin: 20px;
+        width: 100%;
+        height: 270px;
+        text-align: center;
+        background: $sectionBgr;
         border-radius: 5px;
-        height: 20%;
-        margin-top: 0;
+        color: $TextColorcard;
 
-        .section_banner_text_wrap {
+        .section_card_right_container {
             padding: 0;
-            padding-top: 15px;
-            padding-left: 100px;
+            margin: 5px 50px 5px 400px;
+            padding-top: 30px;
 
-            .section_banner_heading {
-                color: $colorcontent;
-                font-family: $mainFont;
-                font-size: $FontSize + 13;
+            .section_card_heading {
+                color: $logincolor;
                 font-weight: bold;
-                width: 370px;
+                font-size: $FontSize + 5px;
+                padding-bottom: 20px;
                 padding: 0;
             }
 
-            .section_banner_text {
-                color: $TextColorcard;
+            a {
+                color: $logincolor;
+                font-size: $FontSize;
+            }
+
+            .section_card_text {
+                margin: 45px 0 14px 0;
+                width: 400px;
+                font-size: $FontSize + 1px;
                 padding: 0;
-                width: 300px;
-                margin: -20px 0 0px 0;
-                @include secondary_title;
-
+                text-align: justify;
+                font-family: map-get($fontFamily, 'mainFont'), sans-serif;
             }
+        }
 
-            .section_banner_button {
-                background: $bckbut;
-            }
+        .section_card_img {
+            float: left;
+            padding: 15px;
+            width: 320px;
+            height: 240px;
+        }
+
+    }
+}
+
+.section_banner {
+    position: absolute;
+    top: 1620px;
+    z-index: 2;
+    width: 62%;
+    background: $Gradientbanner;
+    border-radius: 5px;
+    height: 20%;
+    margin-top: 0;
+
+    .section_banner_text_wrap {
+        padding: 0;
+        padding-top: 15px;
+        padding-left: 100px;
+
+        .section_banner_heading {
+            color: $colorcontent;
+            font-size: $FontSize + 13;
+            font-weight: bold;
+            width: 370px;
+            padding: 0;
+        }
+
+        .section_banner_text {
+            color: $TextColorcard;
+            padding: 0;
+            width: 300px;
+            margin: -20px 0 0px 0;
+            font-family: map-get($fontFamily, 'mainFont'), sans-serif;
+
         }
 
         .section_banner_button {
-
-            position: relative;
-            bottom: 50px;
             background: $bckbut;
-            margin-left: 670px;
-            border-radius: 2px;
-            border: none;
-            font-weight: bold;
-            font-size: $FontSize + 2;
-            color: $buttoncolor;
-            padding: 13px 40px;
-
         }
+    }
+
+    .section_banner_button {
+
+        position: relative;
+        bottom: 50px;
+        background: $bckbut;
+        margin-left: 670px;
+        border-radius: 2px;
+        border: none;
+        font-weight: bold;
+        font-size: $FontSize + 2;
+        color: $buttoncolor;
+        padding: 13px 40px;
     }
 }
 
@@ -293,7 +299,6 @@ footer {
                 padding: 0px 0px 12px 0px;
                 font-size: $FontSize + 11px;
                 font-weight: bold;
-                @include secondary_title;
 
                 span {
                     justify-content: center;
@@ -314,7 +319,7 @@ footer {
             text-align: left;
             width: 290px;
             padding-top: 100px;
-            @include secondary_title;
+            font-family: map-get($fontFamily, 'mainFont'), sans-serif;
         }
 
         .footer-cr {
@@ -324,9 +329,7 @@ footer {
             color: $TextColorcard;
             padding-top: 85px;
             padding-right: 65px;
-            @include secondary_title;
+            font-family: map-get($fontFamily, 'mainFont'), sans-serif;
         }
     }
 }
-
-
