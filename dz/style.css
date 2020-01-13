@@ -1,0 +1,338 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Helvetica, serif;
+}
+li{
+    list-style: none;
+    display: flex;
+}
+a{
+    text-decoration: none;
+}
+
+div > .logo{
+    padding-top: 6px;
+    padding-bottom: 6px;
+    margin-right: 90px;
+
+    padding-right: 25px;
+}
+header{
+    background-image: url(img/banner1.png) ;
+    background-repeat: no-repeat;
+    height: 675px;
+    padding: 6px;
+}
+.header-logo{    
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.header-logo a{
+    color: #000;
+    font-size: 18px;
+    margin: 0 30px;
+    padding: 12px 0;
+    border-radius: 10px;
+}
+
+.menu ul{
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+.menu ul ul{
+    display: none;
+    position: absolute;
+    opacity: 0.9;
+    background: #3685b6;
+}
+.menu li:hover ul{
+     width: 302px;
+     display: block;
+     margin-top: 50px;
+     border-radius: 0px;
+     background: #3e96ca;
+}
+.menu li:hover li{
+    display: block;
+}
+.menu ul{
+    margin-top: 20px;    
+    background: #fbd341;
+    border-radius: 10px;
+    display: flex;
+}
+.menu ul li{
+    margin: 0 auto;
+    padding: 5px;
+    hyphens: auto;
+}
+
+.top-container{
+   background: rgb(47,135,181, 0.7);
+}
+.top-container{
+    width: 1200px;
+    height: 200px;
+    margin: 0;
+    position: absolute;
+    bottom: 200px;
+}
+.but1{
+    margin-left: 170px;
+    width: 220px;
+    height: 45px;
+    border-radius: 10px;
+    border: none;
+    font-family: "Aria" sans-serif;
+    font-size: 14px;
+    background: #fbd341;
+    cursor: pointer;
+}
+.top-slide h2{
+    padding: 45px 0 41px 0;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+
+special-container{
+    width: 80%;
+    margin: 0;
+    text-align: center;
+}
+body > main > section.specialize > div.special-container{
+    margin-top: 40px;
+    margin-left: 181px;
+    margin-bottom: 40px;
+}
+div.special-container > h3 > a:nth-child(1) > span{
+    color: #fbd341;
+}
+
+body > main > section.specialize > div.special-container a{
+    padding-right: 50px;
+}
+
+
+.mart{
+    padding-top: 18px;
+}
+.specialize-card{
+    margin-left: 105px;
+    margin-bottom: 70px;
+}
+
+.card{
+    display: inline-block;
+    background: #f8f7f7;
+    margin: 0;
+    width: 420px;
+    height: 155px;
+    padding: 5px;
+    margin: 15px;
+}
+.text-card p.data-num{
+    padding-top: 2px;
+    font-size: 12px;
+    color: black;
+}
+text-card p{
+    padding-left: 20px;
+}
+
+.left-card{
+    padding-right: 10px;
+    float: left;
+}
+.text1{
+    font-size: 12px;
+}
+.su-text{
+    color: #898989;
+    font-size: 11px;
+}
+
+.item-p h2{
+    padding-top: 45px;
+    padding-bottom: 60px;
+    padding-left: 250px;
+}
+.item-p{
+    width: 100%;
+    background: #f8f7f7;
+    height: 500px;
+}
+.img1{
+    padding-left: 250px;
+    padding-right: 50px;
+    float: left;
+}
+.item-text p{
+    font-size: 16px;
+    text-align: left;
+    margin-left: 45px;
+    margin-right: 320px;
+    margin-top: 70px;
+}
+
+container-item-2{
+    width: 80%;
+}
+
+.img2{
+    position: absolute;
+}
+
+.text-item2{
+    padding-top: 40px;
+    padding-left: 250px;
+    color: white;
+    position: relative;
+}
+.text-item2 h2{
+    margin-bottom: 20px;
+}
+
+.menu-2 li a{
+    padding: 35px 60px 35px 35px;
+    color: white;
+}
+.menu-2 li ul li a{
+    padding: 0;
+    padding-left: 35px;
+}
+
+.menu-2 ul li{
+    display: inline-block;
+    
+}
+.menu-2 ul{
+    position: relative;
+    margin-top: 20px;
+    padding: 35px;
+    margin: 0;
+    background: rgb(1,11,30,0.6);
+    width: 1000px;
+   
+}
+
+.menu-2 ul ul{
+    padding: 0;
+    margin: 0;
+    width: 220px;
+}
+
+.menu-2 ul ul{
+    display: none;
+    position: absolute;
+    
+}
+
+.menu-2 li:hover ul{
+    display: block; 
+        
+}
+.menu-2 li:hover li{
+    transform: rotate(30%);
+    display: block; 
+    background: white;
+    padding: 2px;
+}
+.menu-2 li li a{
+    color: black;
+    padding: 2px;
+}
+.menu-2 li ul li:hover a{
+    color: orange;
+}
+ul.item-3{
+    padding: 5px;
+}
+
+.but2{
+    
+    width: 220px;
+    height: 45px;
+    border-radius: 10px;
+    border: none;
+    font-family: "Aria" sans-serif;
+    font-size: 14px;
+    background: #fbd341;
+    cursor: pointer;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+
+
+.bk-fon{
+    flex: 1 0 auto;
+    background: #22334d;
+}
+.content0{
+    padding-top: 50px;
+    padding-left: 250px;
+    height: 300px;
+    width: 280px;
+}
+.content0 p{
+    padding-top: 20px;
+    width: 300px;
+    color: white;
+}
+.content1{
+    position: absolute;
+    flex: 1 0 auto;
+}
+
+.footer {
+	flex: 0 0 auto;
+}
+@media only screen and (max-width: 320px){
+    .header-logo{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+    .menu{
+    text-align: center;
+    margin-right: 125px;
+    margin-left: 0px;
+    padding-right: 25px;
+    }    
+    
+    .logo{
+        display: none;
+    }
+    .main-menu{
+        display: none;
+    }
+    .main-menu{
+        width: 100%;
+        display: block;
+        font-size: 9px;
+    }
+    .main-menu a{
+        display: block;
+        padding: 20px 0;
+    }
+    .tootle-button{
+        text-align: center;
+        display: block;
+        cursor: pointer;
+        color: black;
+    }
+    .tootle-button::after{
+        content: attr(data-open);
+        display: block;
+    }
+}
